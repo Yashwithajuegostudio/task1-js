@@ -1,0 +1,81 @@
+* ,*::before,*::after{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    width: 400px;
+    height: 500px;
+    margin: 30px auto;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 30px;
+
+    background-color: rgb(210, 198, 198);
+    display:grid ;
+    align-items: center;
+    grid-template-columns: repeat(4,100px);;
+    grid-template-rows: minmax(100px,auto) repeat(5,100px)
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+
+}
+
+td input:hover {
+    background-color: aquamarine;
+}
+
+
+button {
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+    margin: 2px;
+    cursor: pointer;
+    outline: none;
+}
+
+button {
+    border-radius: 20px;
+
+    background-color: rgb(103, 197, 197);
+    border: 2px solid black;
+}
+
+.inputbox {
+    width: 250px;
+    margin: 5px;
+    font-size: 25px;
+    padding: 10px;
+    outline: none;
+    background-color: white;
+}
+
+.operator {
+    background-color: rgb(150, 206, 150);
+}
+
+.clearScreen {
+    background-color: rgb(198, 156, 77);
+}
+
+.output{
+    grid-column: 1/-1;
+    background-color: rgba(241, 223, 223, 0.75);
+    width: 360px;
+    height: 50px;
+    display: flex;
+    padding: 10px;
+  justify-content: space-around;
+  flex-direction: column;
+  font-size: 2rem;
+    align-items: center;
+}
+.output .prev-operand{
+    color: black;
+    font-size: 1.5rem;
+}
