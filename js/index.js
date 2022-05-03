@@ -1,18 +1,18 @@
-let screen = document.getElementById("screen");
+const textbox = document.getElementById("textbox");
 buttons = document.querySelectorAll("button");
-let screenValue = "";
+let textboxValue = "";
 for (item of buttons) {
   item.addEventListener("click", (e) => {
     buttonText = e.target.innerText;
     console.log("Button text is ", buttonText);
     if (buttonText == "C") {
-      screenValue = "";
-      screen.value = screenValue;
+      textboxValue = "";
+      textbox.value = textboxValue;
     } else if (buttonText == "=") {
-      screen.value = eval(screenValue);
+      textbox.value = eval(textboxValue);
     } else {
-      screenValue += buttonText;
-      screen.value = screenValue;
+      textboxValue += buttonText;
+      textbox.value = textboxValue;
     }
   });
 }
