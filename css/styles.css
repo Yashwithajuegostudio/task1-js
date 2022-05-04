@@ -13,7 +13,7 @@ table {
 
 input {
   border-radius: 20px;
-  border: 3px solid #244624;
+  border: 3px solid #060906;
   background-color: rgb(38, 198, 198);
   font-size: 25px;
   padding: 10px;
@@ -22,7 +22,7 @@ input {
   margin: 6px;
 }
 
-button {
+td {
   border: 2px solid black;
   border-radius: 50px;
   font-size: 30px;
@@ -31,7 +31,7 @@ button {
   background: rgb(183, 212, 223);
   width: 70px;
   height: 70px;
-  margin: 5px;
+  margin: 8px;
 }
 
 .calculator {
@@ -51,5 +51,5 @@ h1 {
 .operator {
   background-color: rgb(39, 222, 39);
 
-  padding: 10px;
+  
 }

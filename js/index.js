@@ -1,10 +1,10 @@
 const textbox = document.getElementById("textbox");
-buttons = document.querySelectorAll("button");
+td = document.querySelectorAll("td");
 let textboxValue = "";
-for (item of buttons) {
+for (item of td) {
   item.addEventListener("click", (e) => {
     buttonText = e.target.innerText;
-    console.log("Button text is ", buttonText);
+
     if (buttonText == "C") {
       textboxValue = "";
       textbox.value = textboxValue;
